@@ -3,7 +3,7 @@ title       : Introduction à la Data Science
 subtitle    : Année scolaire 2014-2015
 author      : Matthias Oehler
 job         : Vice Président Data @Makazi
-github      : {user: oehlr, repo: intro-datascience}
+github      : {user: oehlr, repo: slide-introdatascience-session1}
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -13,7 +13,7 @@ knit        : slidify::knit2slides
 logo        : logods.png
 biglogo     : logo_ensai.png
 --- { tpl: mkz-cols-thumbs, 
-      description: "<p>Voici une description qui ne se repete pas</p>"}
+      description: ""}
 
 ```{r envir, comment = NA, message = F, echo = F, cache=TRUE}
 pal <- list()
@@ -26,29 +26,29 @@ pal$cyan   <- "#00B7BE"
 
 ## Sommaire - Session 1
 
-*** { span: span3, img: book.png}
+*** { span: span3, img: nuclearidea.png}
 
-### 1- REVOLUTION
+### REVOLUTION
 
 La Data science, c'est quoi exactement et quelles sont les diciplines auquelles cela fait référence ?
+
+*** { span: span3, img: script.png}
+
+### FONDAMENTAUX
+
+Quels sont les grands principes ayant fait émerger la Data science ?
 
 *** { span: span3, img: cycle.png}
 
-### 2- FONDAMENTAUX
+### PROCESSUS
 
-La Data science, c'est quoi exactement et quelles sont les diciplines auquelles cela fait référence ?
+Comment bien apréhender un sujet Data science et quels processus suivre afin d'en tirer profit ?
 
-*** { span: span3, img: zip.png}
+*** { span: span3, img: chart.png}
 
-### 3- PROCESS
+### PRODUIT
 
-La Data science, c'est quoi exactement et quelles sont les diciplines auquelles cela fait référence ?
-
-*** { span: span3, img: database.png}
-
-### 4- PRODUIT
-
-La Data science, c'est quoi exactement et quelles sont les diciplines auquelles cela fait référence ?
+Vers une notion de Data produits. Quelques exemples ?
 
 
 
@@ -67,7 +67,8 @@ La Data science, c'est quoi exactement et quelles sont les diciplines auquelles 
 
 
 
----
+---  { tpl: slide,
+       description: "Ces dernieres années, <b>Big Data</b> et <b>Data science</b> sont devenus la solution à tous les problèmes."}
 
 ## Qui a besoin de Data Science ?
 
@@ -79,16 +80,14 @@ La Data science, c'est quoi exactement et quelles sont les diciplines auquelles 
 
 
 
-
-
 ---  { tpl: slide,
-       description: "Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots."}
+       description: "La Data science est composée de plusieurs expertises."}
 
 ## Data Science : qu'est ce que c'est exactement ?
 
 <center>
   <a title="By Calvin.Andrus (Own work) [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3ADataScienceDisciplines.png">
-    <img width="70%" alt="DataScienceDisciplines" src="http://upload.wikimedia.org/wikipedia/commons/4/44/DataScienceDisciplines.png"/>
+    <img width="65%" alt="DataScienceDisciplines" src="http://upload.wikimedia.org/wikipedia/commons/4/44/DataScienceDisciplines.png"/>
   </a>
 </center>
 
@@ -99,7 +98,7 @@ La Data science, c'est quoi exactement et quelles sont les diciplines auquelles 
 
 
 --- { tpl: slide, 
-      description: "<p>Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.</p>"}
+      description: "<p>Le CRM et le Marketing sont les domaines d'expertises les plus courants.</p>"}
 
 ## Domaines d'applications
 
@@ -120,7 +119,7 @@ ggplot(df, aes(x=domain, y=value)) + geom_bar(stat = "identity")  + coord_flip()
 
 
 --- { tpl: slide, 
-      description: "<p>Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.</p>"}
+      description: "<p>R et Python sont les langages de programmation préférés des Data scientists.</p>"}
 
 ## Langages de programmation utilisés
 
@@ -139,7 +138,7 @@ ggplot(df, aes(x=language, y=value)) + geom_bar(stat = "identity")  + coord_flip
 
 
 --- { tpl: mkz-cols-panels, 
-      description: "<p>Voici une description qui ne se repete pas</p>"}
+      description: "<p>Répartition des algorithmes mathématiques en grandes familles</p>"}
 
 ## Les grandes familles d'algorithmes
 
@@ -184,7 +183,7 @@ ggplot(df, aes(x=language, y=value)) + geom_bar(stat = "identity")  + coord_flip
 
 
 --- { tpl: slide, 
-      description: "<p>Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.</p>"}
+      description: "<p>Les algorithmes les plus utilisés par les Data Scientist sont les Regressions, les arbres de décisions et le clustering.</p>"}
 
 ## Utilisation des algorithmes
 
@@ -215,7 +214,7 @@ ggplot(df, aes(x=methode, y=value)) + geom_bar(stat = "identity")  + coord_flip(
 
 
 --- { tpl: mkz-rows-thumbs, 
-      description: "<p>Voici une description qui ne se repete pas</p>"}
+      description: "<p>Ce qu'il faut connaitre</p>"}
 
 ## Environnements techniques
 
@@ -243,7 +242,7 @@ Big Table, MongoDB, Hbase, CouchDB : comment les sytemes de gestion de base de d
 
 
 --- { tpl: mkz-cols, 
-      description: "<p>Voici une description qui ne se repete pas</p>"}
+      description: "<p></p>"}
 
 ## Le Cloud Computing
 
@@ -388,7 +387,7 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 
 
 --- { tpl: mkz-rows-callout, 
-      description: "<p>Avantages et inconvenients du distribué pour la Data science</p>"}
+      description: "<p>Avantages et inconvenients des base NoSQL pour la Data science</p>"}
 
 ## Les BDD NoSQL et la Data science
 
@@ -463,7 +462,7 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 
 
 --- { tpl: slide, 
-      description: "<p>Dans un contexte ou les algorithmes sont de plus en plus utilisés au quotidien il devient indispensable de suivre une logique 'produit'</p>" }
+      description: "<p>Dans un contexte où les algorithmes sont de plus en plus utilisés au quotidien il devient indispensable de suivre une logique 'produit'</p>" }
 
 ## Qu'est ce qu'un Data Product
 
@@ -515,7 +514,7 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 
 
 --- { tpl: slide, 
-      description: "Recherche d'image similaire" }
+      description: "Recherche de musique" }
 
 ## Quelques exemples de Data Product
 
@@ -526,7 +525,7 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 
 
 --- { tpl: slide, 
-      description: "Recherche d'image similaire" }
+      description: "Recommandation de style vestimentaire" }
 
 ## Quelques exemples de Data Product
 
@@ -538,7 +537,7 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 
 
 --- { tpl: slide, 
-      description: "Recherche d'image similaire" }
+      description: "Recommandation de film" }
 
 ## Quelques exemples de Data Product
 
@@ -553,7 +552,7 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 
 
 --- { tpl: slide, 
-      description: "Recherche d'image similaire" }
+      description: "Prediction de la prochaine action importante" }
 
 ## Quelques exemples de Data Product
 
@@ -565,7 +564,7 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 
 
 --- { tpl: slide, 
-      description: "" }
+      description: "Suivi des performances personnelles" }
 
 ## Quelques exemples de Data Product
 
