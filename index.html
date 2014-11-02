@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Introduction à la Data Science</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Introduction à la Data Science">
+  <meta name="author" content="Matthias Oehler">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="./assets/css/bootstrap3fix.css"></link>
+<link rel=stylesheet href="./assets/css/font-awesome.css"></link>
+<link rel=stylesheet href="./assets/css/font-awesome.min.css"></link>
+<link rel=stylesheet href="./assets/css/latto-font.css"></link>
+<link rel=stylesheet href="./assets/css/mkz.css"></link>
+<link rel=stylesheet href="./assets/css/quotes.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+      <slide class="nobackground">
+    <article class="flexbox vcenter">
+      <span>
+        <img width='600px' src="assets/img/logo_ensai.png">
+      </span>
+    </article>
+  </slide>
+    <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/logods.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Introduction à la Data Science</h1>
+    <h2>Année scolaire 2014-2015</h2>
+    <p>Matthias Oehler<br/>Vice Président Data @Makazi</p>
+  </hgroup>
+    <a href="https://github.com/oehlr/intro-datascience/zipball/gh-pages" class="example">
+     Download
+    </a>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Sommaire - Session 1</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Voici une description qui ne se repete pas</p></p>
+  </div>
+  
+  <article data-timings="">
+    
+      
+
+<div class="row-fluid show-grid" style="height:100%;">
+  <div class="span3" style="height:100%;">
+    <div class="thumbnail" style="height:100%; border:0px solid gray">
+      <img alt="100%x200" src="assets/img/book.png" style="transform:scale(0.75);height:200px;display: block;">
+      <div class="caption">
+        <h3>1- REVOLUTION</h3>
+        <p>La Data science, c&#39;est quoi exactement et quelles sont les diciplines auquelles cela fait référence ?</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="span3" style="height:100%;">
+    <div class="thumbnail" style="height:100%; border:0px solid gray">
+      <img alt="100%x200" src="assets/img/cycle.png" style="transform:scale(0.75);height:200px;display: block;">
+      <div class="caption">
+        <h3>2- FONDAMENTAUX</h3>
+        <p>La Data science, c&#39;est quoi exactement et quelles sont les diciplines auquelles cela fait référence ?</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="span3" style="height:100%;">
+    <div class="thumbnail" style="height:100%; border:0px solid gray">
+      <img alt="100%x200" src="assets/img/zip.png" style="transform:scale(0.75);height:200px;display: block;">
+      <div class="caption">
+        <h3>3- PROCESS</h3>
+        <p>La Data science, c&#39;est quoi exactement et quelles sont les diciplines auquelles cela fait référence ?</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="span3" style="height:100%;">
+    <div class="thumbnail" style="height:100%; border:0px solid gray">
+      <img alt="100%x200" src="assets/img/database.png" style="transform:scale(0.75);height:200px;display: block;">
+      <div class="caption">
+        <h3>4- PRODUIT</h3>
+        <p>La Data science, c&#39;est quoi exactement et quelles sont les diciplines auquelles cela fait référence ?</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="section-slide" id="slide-2" style="background-color:#00B7BE;">
+  <div class="row-fluid" style="background-color:rgba(255,255,255,0.25);margin:10%;width:80%;height:60%;">
+    <div class="row-fluid" style="height:10%;"></div>
+    <div class="row-fluid" style="height:40%;">
+        <center><img alt="75%x75%" class="img75 auto-fadein" src="assets/img/white_nuclearidea.png" style="height: 150px; display: block;"></center>
+    </div>
+    <div class="row-fluid" style="height:50%;">
+      <center>
+        <hgroup class="auto-fadein">
+          <h1>DATA REVOLUTION</h1>
+          
+        </hgroup>
+      </center>
+    </div>
+  </div>
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Qui a besoin de Data Science ?</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p></p>
+  </div>
+  
+  <article data-timings="">
+    <p><center>
+<img width="70%" alt="DataScienceDisciplines" src="assets/img/bor55.png" />
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Data Science : qu&#39;est ce que c&#39;est exactement ?</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p>Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.</p>
+  </div>
+  
+  <article data-timings="">
+    <p><center>
+  <a title="By Calvin.Andrus (Own work) [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3ADataScienceDisciplines.png">
+    <img width="70%" alt="DataScienceDisciplines" src="http://upload.wikimedia.org/wikipedia/commons/4/44/DataScienceDisciplines.png"/>
+  </a>
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Domaines d&#39;applications</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.</p></p>
+  </div>
+  
+  <article data-timings="">
+    <p><img src="assets/fig/domainplot.png" title="plot of chunk domainplot" alt="plot of chunk domainplot" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Langages de programmation utilisés</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.</p></p>
+  </div>
+  
+  <article data-timings="">
+    <p><img src="assets/fig/languageplot.png" title="plot of chunk languageplot" alt="plot of chunk languageplot" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Les grandes familles d&#39;algorithmes</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Voici une description qui ne se repete pas</p></p>
+  </div>
+  
+  <article data-timings="">
+    
+      
+<div class="row-fluid show-grid" style="height:100%;">
+  <div class="span4" style="height:100%;">
+    <div class="panel panel-primary" style="height:95%;">
+      <div class="panel-heading">
+        <h3 class="panel-title">Supervisés</h3>
+      </div>
+      <div class="panel-body">
+        <ul class = "build incremental">
+<li>Regression</li>
+<li>Decision Trees</li>
+<li>Neural Nets</li>
+<li>SVM</li>
+<li>Bayesian Nets</li>
+<li>Genetic Algorithms</li>
+<li>Rules induction</li>
+<li>Autres ...</li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="span4" style="height:100%;">
+    <div class="panel panel-primary" style="height:95%;">
+      <div class="panel-heading">
+        <h3 class="panel-title">Non Supervisés</h3>
+      </div>
+      <div class="panel-body">
+        <ul class = "build incremental">
+<li>ACP</li>
+<li>ACM</li>
+<li>Kohonen</li>
+<li>Text mining</li>
+<li>Bayesian Nets</li>
+<li>Social Network</li>
+<li>Autres ...</li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="span4" style="height:100%;">
+    <div class="panel panel-primary" style="height:95%;">
+      <div class="panel-heading">
+        <h3 class="panel-title">Associations</h3>
+      </div>
+      <div class="panel-body">
+        <ul class = "build incremental">
+<li>Association rules</li>
+<li>Social Networks</li>
+<li>Link Analysis</li>
+<li>Collaborative filtering</li>
+<li>Look alike</li>
+<li>Autres ...</li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Utilisation des algorithmes</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.Ici vient la description de la slide en quelques mots.</p></p>
+  </div>
+  
+  <article data-timings="">
+    <p><img src="assets/fig/methodeplot.png" title="plot of chunk methodeplot" alt="plot of chunk methodeplot" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="section-slide" id="slide-9" style="background-color:#FE5745;">
+  <div class="row-fluid" style="background-color:rgba(255,255,255,0.25);margin:10%;width:80%;height:60%;">
+    <div class="row-fluid" style="height:10%;"></div>
+    <div class="row-fluid" style="height:40%;">
+        <center><img alt="75%x75%" class="img75 auto-fadein" src="assets/img/book_white.png" style="height: 150px; display: block;"></center>
+    </div>
+    <div class="row-fluid" style="height:50%;">
+      <center>
+        <hgroup class="auto-fadein">
+          <h1>Data fondamentaux</h1>
+          
+        </hgroup>
+      </center>
+    </div>
+  </div>
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Environnements techniques</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Voici une description qui ne se repete pas</p></p>
+  </div>
+  
+  <article data-timings="">
+    
+
+
+<div class="row-fluid" style="height:30%; margin-bottom:2%">
+  <div class="span2" style="height:100%">
+    <img alt="75%x75%" class="img75" src="assets/img/cloud.png" style="height: 100%; width: 100%; display: block;">
+  </div>
+  <div class="span10" style="height:100%; padding-left:10px; border-left:2px solid gray;">
+    <h3>Cloud computing</h3>
+    <p>IaaS, PaaS, SaaS, DaaS : comment tout est devenu un &quot;Service&quot; stocké dans les nuages.</p>
+
+  </div>
+</div>
+<div class="row-fluid" style="height:30%; margin-bottom:2%">
+  <div class="span2" style="height:100%">
+    <img alt="75%x75%" class="img75" src="assets/img/node.png" style="height: 100%; width: 100%; display: block;">
+  </div>
+  <div class="span10" style="height:100%; padding-left:10px; border-left:2px solid gray;">
+    <h3>Systemes distribués &amp; Map reduce</h3>
+    <p>Hadoop, HDFS, Hive, MapR : comment faire basculer les traitements analytics sur une architecture scalable.</p>
+
+  </div>
+</div>
+<div class="row-fluid" style="height:30%; margin-bottom:2%">
+  <div class="span2" style="height:100%">
+    <img alt="75%x75%" class="img75" src="assets/img/db.png" style="height: 100%; width: 100%; display: block;">
+  </div>
+  <div class="span10" style="height:100%; padding-left:10px; border-left:2px solid gray;">
+    <h3>NoSQL</h3>
+    <p>Big Table, MongoDB, Hbase, CouchDB : comment les sytemes de gestion de base de données ont ils évolués.</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Le Cloud Computing</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Voici une description qui ne se repete pas</p></p>
+  </div>
+  
+  <article data-timings="">
+    
+      
+<div class="row-fluid show-grid" style="height:100%;">
+  <div class="span8" style="height:100%;">
+      <h3></h3>
+      <p><center>
+<img width="75%" alt="cloud" src="assets/img/cloud.jpg" />
+</center></p>
+
+  </div>
+  <div class="span4" style="height:100%;">
+      <h3></h3>
+      <h4 class="content-title">Grand public :</h4>
+
+<ul>
+<li>Gmail</li>
+<li>Dropbox</li>
+<li>iCloud</li>
+<li>Flickr</li>
+<li>et des centaines...</li>
+</ul>
+
+<h4 class="content-title">Data sciences :</h4>
+
+<ul>
+<li><a href="https://rstudio-dev.rm-rf.io:1480/">RStudio</a></li>
+<li>yhat</li>
+<li>Dataiku</li>
+<li>autre ?</li>
+</ul>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Le Cloud Computing et la Data science</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Avantages et inconvenients du cloud computing pour la Data science</p></p>
+  </div>
+  
+  <article data-timings="">
+    
+
+
+<div class="row-fluid" style="height:45%; margin-bottom:2%">
+  <div class="bs-callout bs-callout-success" style="height:100%; padding:0; padding-left:10px;">
+    <h3>Avantages</h3>
+    <ul>
+<li>Simplicité de mise en place ne necessitant qu&#39;une très faible intervention des services technique </li>
+<li>Bénéficier d&#39;une puissance de calcul elastique grâce à la virtualisation</li>
+<li>Maitrise des couts grâce au &quot;Pay per use&quot;</li>
+<li>Pouvoir accéder à ses algorithmes où que l&#39;on soit</li>
+</ul>
+
+  </div>
+</div>
+<div class="row-fluid" style="height:45%; margin-bottom:2%">
+  <div class="bs-callout bs-callout-danger" style="height:100%; padding:0; padding-left:10px;">
+    <h3>Inconvénients</h3>
+    <ul>
+<li>Couteux sur le long terme (abonnement), même si la logique de calcul est assez complexe (electricité, maintenance, renouvellement de park, ...)</li>
+<li>Dépendance forte à un tiers</li>
+<li>Pour des questions juridiques, l&#39;utilisation du cloud computing peut être tout simplement impossible</li>
+</ul>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Systemes distribués &amp; Map Reduce</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Vue conceptuelle</p></p>
+  </div>
+  
+  <article data-timings="">
+    <p><center>
+<img width="70%" alt="DataScienceDisciplines" src="http://www.glennklockwood.com/di/mapreduce-workflow.png" />
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Les environnements distribués et la Data science</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Avantages et inconvenients du distribué pour la Data science</p></p>
+  </div>
+  
+  <article data-timings="">
+    
+
+
+<div class="row-fluid" style="height:45%; margin-bottom:2%">
+  <div class="bs-callout bs-callout-success" style="height:100%; padding:0; padding-left:10px;">
+    <h3>Avantages</h3>
+    <ul>
+<li>Possibilité de stoquer et exploiter une volumétrie de donnée gigantesque () autant de descripteur pouvant service à un modèle prédictif)</li>
+<li>La volumétrie des données n&#39;est plus réellement un problème. Les algorithmes fonctionnant sur 1 000 lignes fonctionneront sur 10<sup>9</sup> lignes</li>
+<li>Emergence de nouvelles approches méthodologiques et de nouveaux algorithmes</li>
+</ul>
+
+  </div>
+</div>
+<div class="row-fluid" style="height:45%; margin-bottom:2%">
+  <div class="bs-callout bs-callout-danger" style="height:100%; padding:0; padding-left:10px;">
+    <h3>Inconvénients</h3>
+    <ul>
+<li>Le stockage de la données a repris l&#39;avantage sur l&#39;analyse des données. Une données bien souvent inexploitable en l&#39;état et bien trop mal struturée.</li>
+<li>Quid de la pertinence d&#39;utiliser un si gros volume de données vs. des échantillonages</li>
+<li>Demande bien souvent une refonte complète des algorithmes traditionnels pour fonctionner en distribué</li>
+</ul>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Les bases de données NoSQL</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Les base de données NoSQL ont été spécialement conçu pour fournir des solutions de stockage de données de hautes performances et évolutives</p></p>
+  </div>
+  
+  <article data-timings="">
+    
+      
+<div class="row-fluid show-grid" style="height:100%;">
+  <div class="span5" style="height:100%;">
+      <h3>Pourquoi le NoSQL ?</h3>
+      <ul>
+<li>Une solution &quot;simple&quot; pour répondre aux problématiques de volumétrie et de non structuration de la donnée.</li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li>Moyennant certains compromis sur les fondements mêmes des SGBD :
+
+<ul>
+<li> Atomicité</li>
+<li> Consistence</li>
+<li> Durabilité</li>
+</ul></li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li><b>Objectifs</b> : Scalabilité et haute disponibilité</li>
+</ul>
+
+  </div>
+  <div class="span1" style="height:100%;">
+      <h3></h3>
+      
+  </div>
+  <div class="span5" style="height:100%;">
+      <h3>Grandes familles des BDD NoSQL :</h3>
+      <ul>
+<li><p><b>Clé / valeur</b> : Ex. <a href="http://try.redis.io/">Redis</a></p></li>
+<li><p><b>Orientées documents</b> : Ex. <a href="http://www.mongodb.org/">MongoDB</a></p></li>
+<li><p><b>Orientées graphes</b> : Ex. <a href="http://neo4j.com/">Neo4J</a></p></li>
+<li><p><b>Orientées colonnes</b> : Ex. <a href="http://cassandra.apache.org/">Cassandra</a> </p></li>
+</ul>
+
+<p>La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez en !</p>
+
+  </div>
+  <div class="span1" style="height:100%;">
+      <h3></h3>
+      
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Les BDD NoSQL et la Data science</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Avantages et inconvenients du distribué pour la Data science</p></p>
+  </div>
+  
+  <article data-timings="">
+    
+
+
+<div class="row-fluid" style="height:45%; margin-bottom:2%">
+  <div class="bs-callout bs-callout-success" style="height:100%; padding:0; padding-left:10px;">
+    <h3>Avantages</h3>
+    <ul>
+<li>Scalabilité</li>
+<li>Données non structurée</li>
+<li>Données naturellemnt connecté (réseaux sociaux)</li>
+</ul>
+
+  </div>
+</div>
+<div class="row-fluid" style="height:45%; margin-bottom:2%">
+  <div class="bs-callout bs-callout-danger" style="height:100%; padding:0; padding-left:10px;">
+    <h3>Inconvénients</h3>
+    <ul>
+<li>Gère mal les relations</li>
+<li>Pas de oncsistence</li>
+<li>Besoin de requetage forts (schemaless) ou complexe</li>
+</ul>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue quote dark" id="slide-17" style="background:;">
+  
+  <div class="slide-description">
+    <p></p>
+  </div>
+  
+  <article data-timings="">
+    <p><q>Un data scientist est meilleur en statistique que n&#39;importe quel développeur et meilleur en développement que n&#39;importe quel statisticien</q></p>
+
+<style>
+.dark q {
+  color: white;
+}
+</style>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="section-slide" id="slide-18" style="background-color:#FBCEB6;">
+  <div class="row-fluid" style="background-color:rgba(255,255,255,0.25);margin:10%;width:80%;height:60%;">
+    <div class="row-fluid" style="height:10%;"></div>
+    <div class="row-fluid" style="height:40%;">
+        <center><img alt="75%x75%" class="img75 auto-fadein" src="assets/img/cycle_white.png" style="height: 150px; display: block;"></center>
+    </div>
+    <div class="row-fluid" style="height:50%;">
+      <center>
+        <hgroup class="auto-fadein">
+          <h1>Data process</h1>
+          
+        </hgroup>
+      </center>
+    </div>
+  </div>
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Processus Data mining</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p></p>
+  </div>
+  
+  <article data-timings="">
+    <p><center>
+<img width="55%" alt="DataScienceDisciplines" src="assets/img/crispdm.png" />
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Processus Data Science</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p></p>
+  </div>
+  
+  <article data-timings="">
+    <p><center>
+<img width="70%" alt="DataScienceDisciplines" src="assets/img/Data_visualization_process_v1.png" />
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue quote white" id="slide-21" style="background:;">
+  
+  <div class="slide-description">
+    <p></p>
+  </div>
+  
+  <article data-timings="">
+    <p><q>Passer d&#39;une analyse <br /> à un <b>produit</b></q></p>
+
+<style>
+.dark q {
+  color: white;
+}
+</style>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="section-slide" id="slide-22" style="background-color:#7F7FCF;">
+  <div class="row-fluid" style="background-color:rgba(255,255,255,0.25);margin:10%;width:80%;height:60%;">
+    <div class="row-fluid" style="height:10%;"></div>
+    <div class="row-fluid" style="height:40%;">
+        <center><img alt="75%x75%" class="img75 auto-fadein" src="assets/img/chart_white.png" style="height: 150px; display: block;"></center>
+    </div>
+    <div class="row-fluid" style="height:50%;">
+      <center>
+        <hgroup class="auto-fadein">
+          <h1>DATA PRODUCT</h1>
+          
+        </hgroup>
+      </center>
+    </div>
+  </div>
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>Qu&#39;est ce qu&#39;un Data Product</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Dans un contexte ou les algorithmes sont de plus en plus utilisés au quotidien il devient indispensable de suivre une logique 'produit'</p></p>
+  </div>
+  
+  <article data-timings="">
+    <ul>
+<li>Au dela d&#39;une simple analyse statistique, le Data Product à pour vocation d&#39;ètre <b>réutilisé, partagé, mesuré, amélioré</b>
+
+<ul>
+<li><b>Réutilisé</b> : Capitaliser sur un travail déjà effectué, rentabiliser le temps passé (R&amp;D) <br /><br /></li>
+<li><b>Partagé</b> : Les outils aujourd&#39;hui permettent le travail collaboratif très simplement <br /><br /></li>
+<li><b>Mesuré</b> : Souvent vu comme des &quot;boites noires&quot;, les algorithmes mathématiques doivent ètre transparent et founir un maximum d&#39;information sur leurs propre fonctionnement <br /><br /></li>
+<li><b>Amélioré</b> : En continu les algorithmes doivent être suivi, amélioré, optimisé afin de délivrer les meilleurs performances  <br /><br /></li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>Quelques exemples de Data Product</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p>Moteur de recommandation sur site</p>
+  </div>
+  
+  <article data-timings="">
+    <p><center>
+    <img width="50%" alt="fitbit" src="assets/img/macys-retargeting.png"/>
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>Quelques exemples de Data Product</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p>Moteur de suggestion</p>
+  </div>
+  
+  <article data-timings="">
+    <p><center>
+    <img width="50%" alt="fitbit" src="assets/img/linkedin.jpg"/>
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>Quelques exemples de Data Product</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p>Recherche d'image similaire</p>
+  </div>
+  
+  <article data-timings="">
+    <p><center>
+    <img width="50%" alt="fitbit" src="assets/img/similar.jpg"/>
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>Quelques exemples de Data Product</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p>Recherche d'image similaire</p>
+  </div>
+  
+  <article data-timings="">
+    <p><center>
+    <img width="50%" alt="fitbit" src="assets/img/shazam.jpg"/>
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  <hgroup>
+    <h2>Quelques exemples de Data Product</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p>Recherche d'image similaire</p>
+  </div>
+  
+  <article data-timings="">
+    <p><center>
+    <img width="50%" alt="fitbit" src="assets/img/chic-type.jpg"/>
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-29" style="background:;">
+  <hgroup>
+    <h2>Quelques exemples de Data Product</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p>Recherche d'image similaire</p>
+  </div>
+  
+  <article data-timings="">
+    <p><center>
+    <img width="50%" alt="fitbit" src="assets/img/netflix.jpg"/>
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-30" style="background:;">
+  <hgroup>
+    <h2>Quelques exemples de Data Product</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p>Recherche d'image similaire</p>
+  </div>
+  
+  <article data-timings="">
+    <p><center>
+    <img width="50%" alt="fitbit" src="assets/img/google-now-cards.jpg"/>
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-31" style="background:;">
+  <hgroup>
+    <h2>Quelques exemples de Data Product</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p></p>
+  </div>
+  
+  <article data-timings="">
+    <p><center>
+    <img width="70%" alt="fitbit" src="assets/img/fitbit.jpg"/>
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="thank-you-slide segue" id="slide-32" style="background:;">
+  <aside class="gdbar right"><img src="assets/img/logods.png"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>Merci</h2>
+    <span style="color:#FFF"><div stype="color:#FFFFFF">Pour plus d'information, contactez moi !</div>
+</span>
+  </article>
+
+  <p class="auto-fadein" data-config-contact="">
+    <span>email</span><a href="moehler@makazi.com">moehler@makazi.com</a><br>
+    <span>github</span><a href="https://github.com/OehlR">https://github.com/OehlR</a><br>
+  </p>
+</slide>
+<slide class="" id="slide-33" style="background:;">
+  <hgroup>
+    <h2>titre</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p></p>
+  </div>
+  
+  <article data-timings="">
+    <p><span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  <hgroup>
+    <h2>Alert</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p></p>
+  </div>
+  
+  <article data-timings="">
+    <div class="alert alert-success" role="alert"><b>Well done!</b> You successfully read this important alert message.</div>
+
+<div class="alert alert-info" role="alert">Heads up! This alert needs your attention, but it's not super important.</div>
+
+<div class="alert alert-warning" role="alert">Warning! Better check yourself, you're not looking too good.</div>
+
+<div class="alert alert-danger" role="alert">Oh snap! Change a few things up and try submitting again. <a href=""  class="alert-link">With link</a></div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-35" style="background:;">
+  <hgroup>
+    <h2>Panel</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p></p>
+  </div>
+  
+  <article data-timings="">
+    <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h4 class="panel-title">Panel title</h4>
+  </div>
+  <div class="panel-body">
+    <p>Panel content</p>
+  </div>
+</div>
+
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h4 class="panel-title">Panel title</h4>
+  </div>
+  <div class="panel-body">
+    <p>Panel content</p>
+  </div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h4 class="panel-title">Panel title</h4>
+  </div>
+  <div class="panel-body">
+    <p>Panel content</p>
+  </div>
+</div>
+
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h4 class="panel-title">Panel title</h4>
+  </div>
+  <div class="panel-body">
+    <p>Panel content</p>
+  </div>
+</div>
+
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h4 class="panel-title">Panel title</h4>
+  </div>
+  <div class="panel-body">
+    <p>Panel content</p>
+  </div>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-36" style="background:;">
+  <hgroup>
+    <h2>2 rows and 3 columns</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p></p>
+  </div>
+  
+  <article data-timings="">
+    
+<div class="row-fluid show-grid" style="height:40%;">
+  <div class="span4" style="height:100%;"> contest
+    <!--Sidebar content-->
+  </div>
+  <div class="span4" style="height:100%;"> side
+    <!--Body content-->
+  </div>
+  <div class="span4" style="height:100%;"> side
+    <!--Body content-->
+  </div>
+</div>
+<div class="row-fluid show-grid" style="height:60%;">
+  <div class="span4" style="height:100%;"> contest
+    <!--Sidebar content-->
+  </div>
+  <div class="span4" style="height:100%;"> side
+    <!--Body content-->
+  </div>
+  <div class="span4" style="height:100%;"> side
+    <!--Body content-->
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-37" style="background:;">
+  <hgroup>
+    <h2>Grid</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p></p>
+  </div>
+  
+  <article data-timings="">
+    
+<div class="row-fluid" style="height:17%">
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+</div>
+<div class="row-fluid" style="height:17%">
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+</div>
+
+<div class="row-fluid" style="height:17%">
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+</div>
+
+<div class="row-fluid" style="height:17%">
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+</div>
+
+<div class="row-fluid" style="height:17%">
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+</div>
+
+<div class="row-fluid" style="height:17%">
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+    <div class="span2" style="height:100%">&nbsp;</div>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-38" style="background:;">
+  
+  <div class="slide-description">
+    <p></p>
+  </div>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Sommaire - Session 1'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='DATA REVOLUTION'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Qui a besoin de Data Science ?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Data Science : qu&#39;est ce que c&#39;est exactement ?'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Domaines d&#39;applications'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Langages de programmation utilisés'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Les grandes familles d&#39;algorithmes'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Utilisation des algorithmes'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Data fondamentaux'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Environnements techniques'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Le Cloud Computing'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Le Cloud Computing et la Data science'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Systemes distribués &amp; Map Reduce'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Les environnements distribués et la Data science'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Les bases de données NoSQL'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Les BDD NoSQL et la Data science'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title=''>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Data process'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Processus Data mining'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Processus Data Science'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title=''>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='DATA PRODUCT'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Qu&#39;est ce qu&#39;un Data Product'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Quelques exemples de Data Product'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Quelques exemples de Data Product'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Quelques exemples de Data Product'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Quelques exemples de Data Product'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='Quelques exemples de Data Product'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Quelques exemples de Data Product'>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='Quelques exemples de Data Product'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='Quelques exemples de Data Product'>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='Merci'>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='titre'>
+         33
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='Alert'>
+         34
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='Panel'>
+         35
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='2 rows and 3 columns'>
+         36
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='Grid'>
+         37
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title=''>
+         38
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
+<script src="./assets/js/mkz.js"></script>
+
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
