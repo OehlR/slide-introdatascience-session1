@@ -11,7 +11,7 @@ widgets     : [bootstrap]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 logo        : logods.png
-biglogo     : logo_ensai.png
+biglogo     : logo_polytech.jpg
 --- { tpl: mkz-cols-thumbs, 
       description: ""}
 
@@ -29,7 +29,7 @@ La Data science, c'est quoi exactement et quelles sont les diciplines auquelles 
 
 ### FONDAMENTAUX
 
-Quels sont les grands principes ayant fait émerger la Data science ?
+Quels sont les grands principes de la Data science ?
 
 *** { span: span3, img: cycle.png}
 
@@ -52,7 +52,7 @@ Vers une notion de Data produits. Quelques exemples ?
 
 --- &mkz-section2 bg:#00B7BE img:white_nuclearidea.png
 
-# DATA REVOLUTION
+# <span style="font-weight:100">DATA</span> REVOLUTION
 
 
 
@@ -174,7 +174,8 @@ Vers une notion de Data produits. Quelques exemples ?
 
 --- &mkz-section2 bg:#FE5745 img:book_white.png
 
-# Data fondamentaux
+# <span style="font-weight:100">DATA</span> FONDAMENTAUX
+
 
 
 
@@ -373,8 +374,8 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 ### Inconvénients
 
 - Gère mal les relations
-- Pas de oncsistence
-- Besoin de requetage forts (schemaless) ou complexe
+- Structuration de la donnée dépendant de l'utilisation qui en est faite
+- Non adapté en cas de besoin de requétage fort (schemaless) ou complexe
 
 
 
@@ -389,22 +390,68 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 }
 </style>
 
+
+
+
+
+
+
+
+
+
 --- &mkz-section2 bg:#FBCEB6  img:cycle_white.png
 
-# Data process
+# <span style="font-weight:100">DATA</span> PROCESS
+
+
+
+
+
+
+--- { tpl: slide,
+      description: "<p>Les projets Data Science étant souvent très chronophages, il est important de structurer son travail.</p>"
+    }
+
+## Des processus : Pourquoi ?
+
+- "Comment pourrais-je atteindre mon objectif ? En combien de temps ? Combien cela me coutera ?"
+
+<br />
+- "Mes données ? Je ne sais pas je vais voir avec mon DSI." 
+
+<br />
+- "Comment ca je ne peux pas l'àge et la civilité mes meilleurs clients ? Il fallait collecter l'information ?"
+
+<br />
+- "Quelles sont les règles qui permettent de prédire cela ? Non non, je ne veux pas que l'on utilise cette donnée."
+
+<br />
+- "Combien cela me rapportera ?"
+
+<br />
+
+<div class="alert alert-info" role="alert"><b>Conseil :</b> Procéder étape par étape</div>
+
+
+
+
+
 
 
 ---
 
-## Processus Data mining
+## Le processus CRISP-DM
 
 <center>
 <img width="55%" alt="DataScienceDisciplines" src="assets/img/crispdm.png" />
 </center>
 
+
+
+
 ---
 
-## Processus Data Science
+## Processus émergent
 
 <center>
 <img width="70%" alt="DataScienceDisciplines" src="assets/img/Data_visualization_process_v1.png" />
@@ -413,7 +460,7 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 
 --- .segue .quote .white
 
-<q>Passer d'une analyse <br /> à un <b>produit</b></q>
+<q>Data Product : la fin des analyses statistiques<br /></q>
 
 <style>
 .dark q {
@@ -421,25 +468,18 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 }
 </style>
 
+
+
+
+
+
+
 --- &mkz-section2 bg:#7F7FCF   img:chart_white.png
 
-# DATA PRODUCT
+# <span style="font-weight:100">DATA</span> PRODUCT
 
 
 
-
-
-
---- { tpl: slide, 
-      description: "<p>Dans un contexte où les algorithmes sont de plus en plus utilisés au quotidien il devient indispensable de suivre une logique 'produit'</p>" }
-
-## Qu'est ce qu'un Data Product
-
-- Au dela d'une simple analyse statistique, le Data Product à pour vocation d'ètre <b>réutilisé, partagé, mesuré, amélioré</b>
-  - <b>Réutilisé</b> : Capitaliser sur un travail déjà effectué, rentabiliser le temps passé (R&D) <br /><br />
-  - <b>Partagé</b> : Les outils aujourd'hui permettent le travail collaboratif très simplement <br /><br />
-  - <b>Mesuré</b> : Souvent vu comme des "boites noires", les algorithmes mathématiques doivent ètre transparent et founir un maximum d'information sur leurs propre fonctionnement <br /><br />
-  - <b>Amélioré</b> : En continu les algorithmes doivent être suivi, amélioré, optimisé afin de délivrer les meilleurs performances  <br /><br />
 
 
 
@@ -517,9 +557,6 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 
 
 
-
-
-
 --- { tpl: slide, 
       description: "Prediction de la prochaine action importante" }
 
@@ -546,6 +583,62 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 
 
 
+
+
+--- .segue .quote .white
+
+<q>Par où commencer ?</q>
+
+<style>
+.dark q {
+  color: white;
+}
+</style>
+
+
+--- { tpl: slide, 
+      description: "<p>Dans un contexte où les algorithmes sont de plus en plus utilisés au quotidien il devient indispensable de suivre une logique 'produit'</p>" }
+
+## Les 3P
+
+- Au dela d'une simple analyse statistique, le Data Product a pour vocation d'ètre <b>réutilisé, partagé, mesuré, amélioré</b><br /><br />
+
+- Le Data scientist a (aussi) un casquette de développeur. Ainsi il doit savoir :
+  - <b>Packager</b> : Capitaliser sur un travail déjà effectué, rentabiliser le temps passé (R&D) <br /><br />
+  - <b>Partager</b> : Le travail collaboratif <br /><br />
+  - <b>Publier</b> : Mettre en production son code <br /><br />
+
+- Créer son propre Package, le partager sur Github et le faire tester
+
+
+--- { tpl: slide, 
+      description: "<p></p>" }
+
+## Proposition pour le TP
+
+- Création d'un package
+
+<br />
+- Récupération de données via Webservice
+
+<br />
+- Analyse de données de type "Document" (twitter)
+
+<br />
+- Publication
+
+
+
+
+
+
+
+
+
+
+
+
+
 --- {
  tpl: thankyou,
  social: [{title: email, href: "moehler@makazi.com"}, {title: github, href: "https://github.com/OehlR"}]
@@ -555,78 +648,6 @@ La grande majorité de ces projets sont en Open Source, voir gratuit. Profitez e
 
 <div stype="color:#FFFFFF">Pour plus d'information, contactez moi !</div>
 
---- 
-
-## titre
-
-<span class="label label-default">Default</span>
-<span class="label label-primary">Primary</span>
-<span class="label label-success">Success</span>
-<span class="label label-info">Info</span>
-<span class="label label-warning">Warning</span>
-<span class="label label-danger">Danger</span>
-
----
-
-## Alert
-
-<div class="alert alert-success" role="alert"><b>Well done!</b> You successfully read this important alert message.</div>
-<div class="alert alert-info" role="alert">Heads up! This alert needs your attention, but it's not super important.</div>
-<div class="alert alert-warning" role="alert">Warning! Better check yourself, you're not looking too good.</div>
-<div class="alert alert-danger" role="alert">Oh snap! Change a few things up and try submitting again. <a href=""  class="alert-link">With link</a></div>
-
----
-
-## Panel
-
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h4 class="panel-title">Panel title</h4>
-  </div>
-  <div class="panel-body">
-    <p>Panel content</p>
-  </div>
-</div>
-<div class="panel panel-success">
-  <div class="panel-heading">
-    <h4 class="panel-title">Panel title</h4>
-  </div>
-  <div class="panel-body">
-    <p>Panel content</p>
-  </div>
-</div>
-<div class="panel panel-info">
-  <div class="panel-heading">
-    <h4 class="panel-title">Panel title</h4>
-  </div>
-  <div class="panel-body">
-    <p>Panel content</p>
-  </div>
-</div>
-<div class="panel panel-warning">
-  <div class="panel-heading">
-    <h4 class="panel-title">Panel title</h4>
-  </div>
-  <div class="panel-body">
-    <p>Panel content</p>
-  </div>
-</div>
-<div class="panel panel-danger">
-  <div class="panel-heading">
-    <h4 class="panel-title">Panel title</h4>
-  </div>
-  <div class="panel-body">
-    <p>Panel content</p>
-  </div>
-</div>
-
---- &mkz-boot_2r_3c h1:40% h2:60%
-
-## 2 rows and 3 columns
-
---- &mkz-grid
-
-## Grid
 
 
 ---

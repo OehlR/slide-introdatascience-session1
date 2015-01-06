@@ -24,7 +24,9 @@
 
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
-  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script> -->
+  <script src="./assets/js/jquery-1.7.min.js"></script>
+
   <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
   <script data-main="libraries/frameworks/io2012/js/slides" 
     src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
@@ -40,7 +42,7 @@
       <slide class="nobackground">
     <article class="flexbox vcenter">
       <span>
-        <img width='600px' src="assets/img/logo_ensai.png">
+        <img width='600px' src="assets/img/logo_polytech.jpg">
       </span>
     </article>
   </slide>
@@ -90,7 +92,7 @@
       <img alt="100%x200" src="assets/img/script.png" style="transform:scale(0.75);height:200px;display: block;">
       <div class="caption">
         <h3>FONDAMENTAUX</h3>
-        <p>Quels sont les grands principes ayant fait émerger la Data science ?</p>
+        <p>Quels sont les grands principes de la Data science ?</p>
 
       </div>
     </div>
@@ -129,7 +131,7 @@
     <div class="row-fluid" style="height:50%;">
       <center>
         <hgroup class="auto-fadein">
-          <h1>DATA REVOLUTION</h1>
+          <h1><span style="font-weight:100">DATA</span> REVOLUTION</h1>
           
         </hgroup>
       </center>
@@ -307,7 +309,7 @@
     <div class="row-fluid" style="height:50%;">
       <center>
         <hgroup class="auto-fadein">
-          <h1>Data fondamentaux</h1>
+          <h1><span style="font-weight:100">DATA</span> FONDAMENTAUX</h1>
           
         </hgroup>
       </center>
@@ -598,8 +600,8 @@
     <h3>Inconvénients</h3>
     <ul>
 <li>Gère mal les relations</li>
-<li>Pas de oncsistence</li>
-<li>Besoin de requetage forts (schemaless) ou complexe</li>
+<li>Structuration de la donnée dépendant de l&#39;utilisation qui en est faite</li>
+<li>Non adapté en cas de besoin de requétage fort (schemaless) ou complexe</li>
 </ul>
 
   </div>
@@ -636,7 +638,7 @@
     <div class="row-fluid" style="height:50%;">
       <center>
         <hgroup class="auto-fadein">
-          <h1>Data process</h1>
+          <h1><span style="font-weight:100">DATA</span> PROCESS</h1>
           
         </hgroup>
       </center>
@@ -646,7 +648,53 @@
 
 <slide class="" id="slide-19" style="background:;">
   <hgroup>
-    <h2>Processus Data mining</h2>
+    <h2>Des processus : Pourquoi ?</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Les projets Data Science étant souvent très chronophages, il est important de structurer son travail.</p></p>
+  </div>
+  
+  <article data-timings="">
+    <ul>
+<li>&quot;Comment pourrais-je atteindre mon objectif ? En combien de temps ? Combien cela me coutera ?&quot;</li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li>&quot;Mes données ? Je ne sais pas je vais voir avec mon DSI.&quot; </li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li>&quot;Comment ca je ne peux pas l&#39;àge et la civilité mes meilleurs clients ? Il fallait collecter l&#39;information ?&quot;</li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li>&quot;Quelles sont les règles qui permettent de prédire cela ? Non non, je ne veux pas que l&#39;on utilise cette donnée.&quot;</li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li>&quot;Combien cela me rapportera ?&quot;</li>
+</ul>
+
+<p><br /></p>
+
+<div class="alert alert-info" role="alert"><b>Conseil :</b> Procéder étape par étape</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Le processus CRISP-DM</h2>
   </hgroup>
   
   <div class="slide-description">
@@ -662,9 +710,9 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-20" style="background:;">
+<slide class="" id="slide-21" style="background:;">
   <hgroup>
-    <h2>Processus Data Science</h2>
+    <h2>Processus émergent</h2>
   </hgroup>
   
   <div class="slide-description">
@@ -680,14 +728,14 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="segue quote white" id="slide-21" style="background:;">
+<slide class="segue quote white" id="slide-22" style="background:;">
   
   <div class="slide-description">
     <p></p>
   </div>
   
   <article data-timings="">
-    <p><q>Passer d&#39;une analyse <br /> à un <b>produit</b></q></p>
+    <p><q>Data Product : la fin des analyses statistiques<br /></q></p>
 
 <style>
 .dark q {
@@ -699,7 +747,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="section-slide" id="slide-22" style="background-color:#7F7FCF;">
+<slide class="section-slide" id="slide-23" style="background-color:#7F7FCF;">
   <div class="row-fluid" style="background-color:rgba(255,255,255,0.25);margin:10%;width:80%;height:60%;">
     <div class="row-fluid" style="height:10%;"></div>
     <div class="row-fluid" style="height:40%;">
@@ -708,37 +756,12 @@
     <div class="row-fluid" style="height:50%;">
       <center>
         <hgroup class="auto-fadein">
-          <h1>DATA PRODUCT</h1>
+          <h1><span style="font-weight:100">DATA</span> PRODUCT</h1>
           
         </hgroup>
       </center>
     </div>
   </div>
-</slide>
-
-<slide class="" id="slide-23" style="background:;">
-  <hgroup>
-    <h2>Qu&#39;est ce qu&#39;un Data Product</h2>
-  </hgroup>
-  
-  <div class="slide-description">
-    <p><p>Dans un contexte où les algorithmes sont de plus en plus utilisés au quotidien il devient indispensable de suivre une logique 'produit'</p></p>
-  </div>
-  
-  <article data-timings="">
-    <ul>
-<li>Au dela d&#39;une simple analyse statistique, le Data Product à pour vocation d&#39;ètre <b>réutilisé, partagé, mesuré, amélioré</b>
-
-<ul>
-<li><b>Réutilisé</b> : Capitaliser sur un travail déjà effectué, rentabiliser le temps passé (R&amp;D) <br /><br /></li>
-<li><b>Partagé</b> : Les outils aujourd&#39;hui permettent le travail collaboratif très simplement <br /><br /></li>
-<li><b>Mesuré</b> : Souvent vu comme des &quot;boites noires&quot;, les algorithmes mathématiques doivent ètre transparent et founir un maximum d&#39;information sur leurs propre fonctionnement <br /><br /></li>
-<li><b>Amélioré</b> : En continu les algorithmes doivent être suivi, amélioré, optimisé afin de délivrer les meilleurs performances  <br /><br /></li>
-</ul></li>
-</ul>
-
-  </article>
-  <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-24" style="background:;">
@@ -885,7 +908,88 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="thank-you-slide segue" id="slide-32" style="background:;">
+<slide class="segue quote white" id="slide-32" style="background:;">
+  
+  <div class="slide-description">
+    <p></p>
+  </div>
+  
+  <article data-timings="">
+    <p><q>Par où commencer ?</q></p>
+
+<style>
+.dark q {
+  color: white;
+}
+</style>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-33" style="background:;">
+  <hgroup>
+    <h2>Les 3P</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p>Dans un contexte où les algorithmes sont de plus en plus utilisés au quotidien il devient indispensable de suivre une logique 'produit'</p></p>
+  </div>
+  
+  <article data-timings="">
+    <ul>
+<li><p>Au dela d&#39;une simple analyse statistique, le Data Product a pour vocation d&#39;ètre <b>réutilisé, partagé, mesuré, amélioré</b><br /><br /></p></li>
+<li><p>Le Data scientist a (aussi) un casquette de développeur. Ainsi il doit savoir :</p>
+
+<ul>
+<li><b>Packager</b> : Capitaliser sur un travail déjà effectué, rentabiliser le temps passé (R&amp;D) <br /><br /></li>
+<li><b>Partager</b> : Le travail collaboratif <br /><br /></li>
+<li><b>Publier</b> : Mettre en production son code <br /><br /></li>
+</ul></li>
+<li><p>Créer son propre Package, le partager sur Github et le faire tester</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  <hgroup>
+    <h2>Proposition pour le TP</h2>
+  </hgroup>
+  
+  <div class="slide-description">
+    <p><p></p></p>
+  </div>
+  
+  <article data-timings="">
+    <ul>
+<li>Création d&#39;un package</li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li>Récupération de données via Webservice</li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li>Analyse de données de type &quot;Document&quot; (twitter)</li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+<li>Publication</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="thank-you-slide segue" id="slide-35" style="background:;">
   <aside class="gdbar right"><img src="assets/img/logods.png"></aside>
   <article class="flexbox vleft auto-fadein">
     <h2>Merci</h2>
@@ -898,214 +1002,7 @@
     <span>github</span><a href="https://github.com/OehlR">https://github.com/OehlR</a><br>
   </p>
 </slide>
-<slide class="" id="slide-33" style="background:;">
-  <hgroup>
-    <h2>titre</h2>
-  </hgroup>
-  
-  <div class="slide-description">
-    <p></p>
-  </div>
-  
-  <article data-timings="">
-    <p><span class="label label-default">Default</span>
-<span class="label label-primary">Primary</span>
-<span class="label label-success">Success</span>
-<span class="label label-info">Info</span>
-<span class="label label-warning">Warning</span>
-<span class="label label-danger">Danger</span></p>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-34" style="background:;">
-  <hgroup>
-    <h2>Alert</h2>
-  </hgroup>
-  
-  <div class="slide-description">
-    <p></p>
-  </div>
-  
-  <article data-timings="">
-    <div class="alert alert-success" role="alert"><b>Well done!</b> You successfully read this important alert message.</div>
-
-<div class="alert alert-info" role="alert">Heads up! This alert needs your attention, but it's not super important.</div>
-
-<div class="alert alert-warning" role="alert">Warning! Better check yourself, you're not looking too good.</div>
-
-<div class="alert alert-danger" role="alert">Oh snap! Change a few things up and try submitting again. <a href=""  class="alert-link">With link</a></div>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-35" style="background:;">
-  <hgroup>
-    <h2>Panel</h2>
-  </hgroup>
-  
-  <div class="slide-description">
-    <p></p>
-  </div>
-  
-  <article data-timings="">
-    <div class="panel panel-primary">
-  <div class="panel-heading">
-    <h4 class="panel-title">Panel title</h4>
-  </div>
-  <div class="panel-body">
-    <p>Panel content</p>
-  </div>
-</div>
-
-<div class="panel panel-success">
-  <div class="panel-heading">
-    <h4 class="panel-title">Panel title</h4>
-  </div>
-  <div class="panel-body">
-    <p>Panel content</p>
-  </div>
-</div>
-
-<div class="panel panel-info">
-  <div class="panel-heading">
-    <h4 class="panel-title">Panel title</h4>
-  </div>
-  <div class="panel-body">
-    <p>Panel content</p>
-  </div>
-</div>
-
-<div class="panel panel-warning">
-  <div class="panel-heading">
-    <h4 class="panel-title">Panel title</h4>
-  </div>
-  <div class="panel-body">
-    <p>Panel content</p>
-  </div>
-</div>
-
-<div class="panel panel-danger">
-  <div class="panel-heading">
-    <h4 class="panel-title">Panel title</h4>
-  </div>
-  <div class="panel-body">
-    <p>Panel content</p>
-  </div>
-</div>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
 <slide class="" id="slide-36" style="background:;">
-  <hgroup>
-    <h2>2 rows and 3 columns</h2>
-  </hgroup>
-  
-  <div class="slide-description">
-    <p></p>
-  </div>
-  
-  <article data-timings="">
-    
-<div class="row-fluid show-grid" style="height:40%;">
-  <div class="span4" style="height:100%;"> contest
-    <!--Sidebar content-->
-  </div>
-  <div class="span4" style="height:100%;"> side
-    <!--Body content-->
-  </div>
-  <div class="span4" style="height:100%;"> side
-    <!--Body content-->
-  </div>
-</div>
-<div class="row-fluid show-grid" style="height:60%;">
-  <div class="span4" style="height:100%;"> contest
-    <!--Sidebar content-->
-  </div>
-  <div class="span4" style="height:100%;"> side
-    <!--Body content-->
-  </div>
-  <div class="span4" style="height:100%;"> side
-    <!--Body content-->
-  </div>
-</div>
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-37" style="background:;">
-  <hgroup>
-    <h2>Grid</h2>
-  </hgroup>
-  
-  <div class="slide-description">
-    <p></p>
-  </div>
-  
-  <article data-timings="">
-    
-<div class="row-fluid" style="height:17%">
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-</div>
-<div class="row-fluid" style="height:17%">
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-</div>
-
-<div class="row-fluid" style="height:17%">
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-</div>
-
-<div class="row-fluid" style="height:17%">
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-</div>
-
-<div class="row-fluid" style="height:17%">
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-</div>
-
-<div class="row-fluid" style="height:17%">
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-    <div class="span2" style="height:100%">&nbsp;</div>
-</div>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-38" style="background:;">
   
   <div class="slide-description">
     <p></p>
@@ -1129,7 +1026,7 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='DATA REVOLUTION'>
+        data-slide=2 title='<span style="font-weight:100">DATA</span> REVOLUTION'>
          2
       </a>
     </li>
@@ -1171,7 +1068,7 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title='Data fondamentaux'>
+        data-slide=9 title='<span style="font-weight:100">DATA</span> FONDAMENTAUX'>
          9
       </a>
     </li>
@@ -1225,37 +1122,37 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=18 title='Data process'>
+        data-slide=18 title='<span style="font-weight:100">DATA</span> PROCESS'>
          18
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=19 title='Processus Data mining'>
+        data-slide=19 title='Des processus : Pourquoi ?'>
          19
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=20 title='Processus Data Science'>
+        data-slide=20 title='Le processus CRISP-DM'>
          20
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=21 title=''>
+        data-slide=21 title='Processus émergent'>
          21
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=22 title='DATA PRODUCT'>
+        data-slide=22 title=''>
          22
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=23 title='Qu&#39;est ce qu&#39;un Data Product'>
+        data-slide=23 title='<span style="font-weight:100">DATA</span> PRODUCT'>
          23
       </a>
     </li>
@@ -1309,44 +1206,32 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=32 title='Merci'>
+        data-slide=32 title=''>
          32
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=33 title='titre'>
+        data-slide=33 title='Les 3P'>
          33
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=34 title='Alert'>
+        data-slide=34 title='Proposition pour le TP'>
          34
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=35 title='Panel'>
+        data-slide=35 title='Merci'>
          35
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=36 title='2 rows and 3 columns'>
+        data-slide=36 title=''>
          36
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=37 title='Grid'>
-         37
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=38 title=''>
-         38
       </a>
     </li>
   </ul>
@@ -1361,6 +1246,7 @@
   <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
 <script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
 <script src="./assets/js/bootstrap.js"></script>
+<script src="./assets/js/jquery-1.7.min.js"></script>
 <script src="./assets/js/mkz.js"></script>
 
   <script>  
