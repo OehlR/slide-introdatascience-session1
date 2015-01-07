@@ -17,7 +17,7 @@ biglogo     : logo_polytech.jpg
 
 
 
-## Sommaire - Session 1
+## Sommaire - Session #1
 
 *** { span: span3, img: nuclearidea.png}
 
@@ -87,6 +87,27 @@ Vers une notion de Data produits. Quelques exemples ?
 
 
 
+
+---  { tpl: slide,
+       description: "Le data scientist est la personne capable d'identifier/solutionner les problèmes pouvant étre résolus par les données."}
+
+## Les data scientists
+
+### Le data scientist :
+
+- est un magicien
+
+<br />
+- est souvent au coeur d'une équipe multi-diciplinaire
+
+<br />
+- doit comprendre les contraintes de tous et s'adapter
+
+<br />
+- ~~sait~~ doit expliquer son métier
+
+<br />
+- à le metier le plus sexy du siecle (Harvard Business Review) 
 
 
 
